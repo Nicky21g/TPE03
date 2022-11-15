@@ -1,0 +1,534 @@
+h1 {
+    color:rgb(0, 0, 0);
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color:rgb(34, 35, 85);
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h3 {
+    color:rgb(98, 149, 193);
+    font-size: 24px;
+    text-align:center;
+}
+h4 {
+    color:rgb(255, 255, 255);
+    font-size: 20px;
+    text-align:center;
+}
+h5 {
+    color:rgb(0, 0, 0);
+    font-size: 18pt;
+    text-align:left;
+}
+
+body {
+    width: 98%;
+    background-color: lightgrey;
+}
+
+.encabezado{
+    background-color:lightgray;
+    margin: none;
+    border:none;
+    padding:4px;
+    display:flex;
+    text-align: center;
+    flex-direction:row;
+    justify-content:space-between;
+    font-size: 14pt;
+    align-items: flex-end;
+}
+/* Menu de navegaciÃ³n pantalla pequeÃ±a*/
+.barra{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    border-top: double black 5px;
+    border-bottom: double black 5px;
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    text-align: left;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    height: auto;
+}
+.menu {
+    display:flex;
+    width: auto;
+    background-color: transparent;
+    flex-direction: column;
+}
+nav.menu {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    text-align: left;
+}
+nav.menu.show {
+    display:flex;
+}
+.header{
+    width:100%;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+#hamburguesa{
+background: none;
+margin: 0px;
+border: 0px;
+padding: 0px;
+text-align: left;
+width: 20px;
+}
+#hamburguesa a {
+    color:black;
+    text-decoration: none;
+}
+#contenedorppal { display: flex;
+    display: block;
+    width: 98%;
+    border: 2px solid #555;
+    margin: 10px ;
+}
+.ruta {
+    cursor: pointer;
+    justify-content: center;
+    width: 125px;
+    height: 35px;
+    /* vertically centered text */
+    line-height: 35px;
+    position: relative;
+    border: 2px solid #555;
+    background: white;
+    text-align: center;
+    margin: 5px;
+    padding: 0px;;
+}
+.ruta.seleccionado { 
+    background: rgb(98, 149, 193); 
+}
+.pie{
+    background-color: rgb(0, 1, 19);
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    text-align: left;
+    padding:0px 20px 0px 20px;
+    color: white;
+}
+.tabla1{
+    background-color:rgb(98, 149, 193);
+    font-size: 16px;
+    margin: none;
+    border: none;
+    padding: none;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.tabla2{
+    background-color:rgb(98, 149, 193);
+    font-size: 16px;
+    margin: none;
+    border: none;
+    padding:none;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.table1 {
+    border: 2px solid black double;
+    color: white;
+    text-align:justify;
+    padding: 10px;
+    font-size: 14pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+td {
+    border:2px solid black;
+}
+th {
+    border:2px solid black;
+}
+li {
+    align-items: stretch;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+}
+
+.texto1 {
+    background-color:rgb(98, 149, 193);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding:0px 0px 0px 0px;
+}
+.texto2 {
+    background-color:rgb(98, 149, 193);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding:0px 0px 0px 0px;
+}
+.texto3{
+    background-color:rgb(98, 149, 193);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20pt;
+    text-align: center;
+    padding:0px 0px 0px 0px;
+}
+.lateral1{
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    background-color:rgb(98, 149, 193);
+}
+.lateral2{
+    margin: 0px;
+    border:0pt;
+    padding: 0px 0px 0px 0px;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    background-color:rgb(98, 149, 193);
+}
+.lateral3{
+    font-size: 16pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    border:0pt;
+    padding:0px;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    background-color:rgb(98, 149, 193);
+}
+.lateral4{
+    font-size: 16px;
+    margin: none;
+    border:none;
+    padding:none;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    background-color:rgb(98, 149, 193);
+}
+.formulario{
+    background-color: rgb(98, 149, 193);
+    width: 98%;
+    display:flex;
+ 
+    flex-direction: column;
+}
+.form1 {
+    background-color:rgb(98, 149, 193);
+    width: 100%;
+    display:flex;
+    flex-direction:column ;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    
+}
+
+.datosform{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ventana{
+    background-color: darkblue;
+    width:22%;
+    color:white;
+    top: 55%;
+    left: 50%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    min-height: 200px;
+    min-width: 350px;
+    border: white solid;
+    margin-top: 550px; /*esto agregue*/
+    margin-left: 80px;/*esto agregue*/
+    position:absolute;
+    border-radius: 10px;
+    display: none;
+}
+#boton_enviar {
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    background-color:rgb(98, 149, 193);
+    width: 100px;
+    height: 40px;
+}
+.boton {
+    border-radius: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 10pt;
+    background-color:rgb(98, 149, 193);
+    width: 100px;
+    height: 40px;
+}
+.ventana_captcha{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    background: rgb(98, 149, 193);
+}
+.ventana_captcha1{
+    /*max-width: 800px;*/
+    display:flex;
+    width: 100%;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05);
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+textarea{
+  resize: none;
+}
+canvas{
+    align-items: center;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+}
+.tabla_adm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: none;
+    padding: none;
+  }
+.tabla_mostrar {
+    color: black;
+    margin: none;
+    border: none;
+    padding: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 97%;
+    font-size: 10pt;
+  }
+#tabla_solicitud {
+    color: #000000;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 97%;
+    background-color: rgb(98, 148, 192);
+  }
+
+
+.contenedorinicio { /*celular*/
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    background-color:rgb(98, 149, 193);
+    align-items: center;
+    text-align: center;
+    padding:0%;
+    margin: 0px;
+    grid-template-areas:
+        "lateral1"
+        "lateral2"
+        "texto1"
+        "lateral4"
+        "lateral3"
+        "texto2";  
+        
+}
+.contenedortarifas { /*celular*/
+    display: grid;
+    width: 100%;
+    background-color:rgb(98, 149, 193);
+    grid-template-columns: 1fr;
+    padding:0%;
+    margin: 0px;
+    grid-template-areas:
+        "texto3"
+        "tabla1"
+        "tabla2";
+}
+
+.contenedorcontratacion { /*celular*/
+    display: grid;
+    width: 100%;
+    background-color:transparent;
+    padding:0%;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "form1";
+}
+.contenedoradministrador { /*celular*/
+    display: grid;
+    width: 100%;
+    background-color:transparent;
+    padding:0%;
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "tabla_adm";
+}
+
+
+ /* posicionamos los elementos donde queremos */
+header {
+    grid-area: header;
+}
+.lateral1 {
+grid-area: lateral1;
+}
+.lateral2 {
+grid-area: lateral2;
+}
+.lateral3 {
+grid-area: lateral3;
+}
+.lateral4 {
+grid-area: lateral4;
+}
+.texto1 {
+grid-area: texto1;
+}
+.texto2 {
+grid-area: texto2;
+}  
+footer {
+grid-area: footer;
+}
+.tabla1{
+grid-area: tabla1;
+}
+.tabla2{
+grid-area: tabla2;
+}
+.texto3{
+grid-area: texto3;
+}
+.tabla_adm{
+grid-area: tabla_adm;
+}
+.form1{
+grid-area: form1;
+}
+
+
+/* Menu de navegación para PC*/
+
+@media screen and (min-width:660px){
+    #hamburguesa{
+      display: none;
+    }
+    .menu {
+        display:flex;
+        width: auto;
+        background-color: transparent;
+        flex-direction: row;
+      }
+    nav.menu {
+        display:flex;
+        flex-direction: row;
+        list-style-type: none;
+        text-align: left;
+    } 
+    .barra {
+        flex-direction: row;
+        justify-content:space-around;
+    }
+   
+    .ruta {
+        cursor: pointer;
+        justify-content: center;
+        width: 150px;
+        height: 50px;
+        /* vertically centered text */
+        line-height: 50px;
+        position: relative;
+        border: 2px solid #555;
+        background: white;
+        text-align: center;
+        margin: 16px;
+        padding: 0px;;
+    }
+
+    .datosform{
+        display: flex;
+        flex-direction: row;
+        align-items: center ;
+
+    }
+    
+    .contenedorinicio { /*pc*/
+        display: grid;
+        padding:0%;
+        margin: 0px;
+        grid-template-columns: 3fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "lateral1 lateral1 lateral1 lateral2"
+        "texto1 texto1 texto1 texto1"
+        "lateral4 lateral3 lateral3 lateral3"
+        "texto2 texto2 texto2 texto2";
+    }
+    .contenedortarifas { /*pc*/
+        display: grid;
+        padding:0%;
+        margin: 0px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "texto3 texto3"
+        "tabla1 tabla2";
+    }
+    .contenedorcontratacion { /*pc*/
+        display: grid;
+        padding:0%;
+        margin: 0px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "header" 
+        "form1"
+        "tabla_adm"
+        "footer";
+    }
+    .ventana_captcha1{
+        display: flex;
+        flex-direction: row;
+    }
+}
