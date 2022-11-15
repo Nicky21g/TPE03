@@ -1,0 +1,105 @@
+<div class ="contenedorcontratacion">
+    <div class="form1">
+        <form class="formulario">
+            <h5 class="h5solicitud"> Datos Personales </h5>
+            <div class="datosform">
+                <div class ="grupoform">
+                    <label for="nombre" > Nombre: </label>
+                    <input type="text" id="nombre" value="" style="width: 200px"/> 
+                </div>
+                <div class ="grupoform">
+                    <label for="apellido" >Apellido: </label>
+                    <input type="text" id="apellido" value="" style="width: 200px"/>
+                </div>
+                <div class ="grupoform">
+                    <label for="dni"> DNI: </label>
+                    <input type="number" id="dni"  min="1000000" max="99999999" style="width: 100px"  />
+                </div>
+            </div>   
+            <h5 class="h5solicitud"> Mi Envío </h5>
+            <div class="datosform">
+                <div class ="grupoform">
+                    <label for="servicio"  > Servicio: </label>
+                    <select id="servicio" style="width: 200px">
+                        <option value="Papelería y Documentación">Papelería y Documentación</option>
+                        <option value="Encomiendas">Encomiendas</option>
+                        <option value="Transporte de Mercaderías">Transporte de Mercaderías</option>
+                        <option value="Muebles y Hogar">Muebles y Hogar</option>
+                    </select> 
+                </div>
+                <div class ="grupoform">
+                    <label for="formpago" >Forma de Pago: </label>
+                    <select id="formpago" style="width: 100px">
+                        <option value="A convenir">A convenir</option>
+                        <option value="Efectivo">Efectivo</option>
+                        <option value="Debito">Tarjeta Debito</option>
+                        <option value="Credito">Tarjeta Credito</option>
+                        <option value="Otras">Otras</option>
+                    </select>
+                </div>
+            </div>
+            <h5 class="h5solicitud"> Domicilio de retiro </h5>
+            <div class="datosform">
+                <div class ="grupoform">
+                    <label for="calle_origen" > Calle: </label>
+                    <input type="text" id="calle_origen" value="" style="width: 200px"/>
+                </div>
+                <div class ="grupoform">
+                    <label for="altura_origen" > Altura: </label>
+                    <input type="text" id="altura_origen" value="" style="width: 200px"/>
+                </div>
+                <div class ="grupoform">
+                    <label for="entre_origen"> Entre que calles:</label>
+                    <input type="content" id="entre_origen" value="" style="width: 200px"></input>
+                </div>
+                <div class ="grupoform">
+                    <label for="obs_origen"> Observaciones:</label>
+                    <textarea type="content" id="obs_origen" cols="88" row="5" maxlength = "150" value="" style="width: 200px" ></textarea>
+                </div>
+            </div>
+            <div class="datosform">
+                          
+            
+              
+            </div>
+            <h5 class="h5solicitud"> Domicilio de entrega </h5>
+            <div class="datosform">      
+                <div class="grupoform"> 
+                    <label for="calle_destino" > Calle: </label>
+                    <input type="text" id="calle_destino" value="" style="width: 200px"/>
+                </div>
+                <div class="grupoform">
+                    <label for="altura_destino" > Altura: </label>
+                    <input type="text" id="altura_destino" value="" style="width: 200px"/>
+                </div>
+                <div class="grupoform">
+                    <label for="entre_destino"> Entre que calles:</label>
+                    <input type="content" id="entre_destino" value="" style="width: 200px"></input>    
+                </div>
+                <div class="grupoform">
+                    <label for="obs_destino"> Observaciones:</label>
+                    <textarea type="content" id="obs_destino" cols="88" row="5" wrap="hard" maxlength="150" value="" style="width: 200px"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="datosform">
+                
+            </div>
+            <div class="ventana_captcha">
+                <h5> Verificar Identidad  </h5>
+                <div class="ventana_captcha1">
+                    <canvas id="captcha"> </canvas> <br>          
+                    <input type="text" id="IngresarCaptcha" placeholder="Enter captcha" maxlength="7" spellcheck="false" required> <br>
+                    <button  type= "button" class = "js-btnload" id="boton_enviar">Enviar</button> <br>          
+                </div>
+            </div>
+        </form>    
+    </div>
+    <div class="ventana" id="popout">
+    <p>Resultado de la validación de identidad: </p>
+    <p id="output"> </p>
+    <button type="button" class = "js-btnload" id="btncerrar">Cerrar</button>
+    </div>
+   
+
+</div>

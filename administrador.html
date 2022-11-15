@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+    <title>NAV con SPA</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="encabezado">
+        <img src="Imagenes/Ng+correopostal.png" alt="ng+" />
+        <img
+          src="Imagenes/Ng+servicio_1-removebg-preview.png"
+          alt="ng+"
+          size="10%"
+        />
+      </div>
+
+      <div class="barra">
+        <button type="button" id="hamburguesa">
+          <img
+            src="Imagenes/menu3-removebg-preview.png"
+            width="20px"
+            height="20px"
+          />
+        </button>
+        <nav class="menu">
+          <section class="rutas" id="inicio">
+            <a href="inicio.html">Inicio</a>
+          </section>
+          <section class="rutas" id="tarifas">
+            <a href="tarifas.html">Tarifas</a>
+          </section>
+          <section class="rutas" id="contratacion">
+            <a href="/contratacion.html">Contratación</a>
+          </section>
+          <section class="rutas" id="administrador">
+            <a href="/administrador.html">Administrador</a>
+          </section>
+          <section class="rutas" id="contacto">Contacto</section>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenedorppal">
+      <div class="contenedoradministrador">
+        <div class="tabla_adm">
+          <h2 align="center">S O L I C I T U D E S      I N G R E S A D A S</h2>
+          <div class="movimiento" id="mover">
+            <button type="button" class="mueve" id="atras">
+              <img src= Imagenes/atras.png class="mueveimagen"/>
+            </button>
+            <label id="infopagina">cantidad de paginas</label>
+            <button type="button" class="mueve" id="adelante">
+              <img src= Imagenes/adelante.png class="mueveimagen"/>
+            </button>
+          </div>
+
+          <div class="tabla_mostrar">
+            <table id="tabla_solicitud">
+              <tr>
+                <th>
+                  <p>ID</p>
+                </th>
+                <th>
+                  <p>NOMBRE</p>
+                </th>
+                <th>
+                  <p>APELLIDO</p>
+                </th>
+                <th>
+                  <p>DNI</p>
+                </th>
+                <th>
+                  <p>SERVICIO</p>
+                </th>
+                <th>
+                  <p>PAGO</p>
+                </th>
+                <th>
+                  <p>CALLE ORIGEN</p>
+                </th>
+                <th>
+                  <p>ALTURA</p>
+                </th>
+                <th>
+                  <p>ENTRE</p>
+                </th>
+                <th>
+                  <p>OBSERVACIONES</p>
+                </th>
+                <th>
+                  <p>CALLE DESTINO</p>
+                </th>
+                <th>
+                  <p>ALTURA</p>
+                </th>
+                <th>
+                  <p>ENTRE</p>
+                </th>
+                <th>
+                  <p>OBSERVACIONES</p>
+                </th>
+              </tr>
+            </table>
+          </div>
+          <br />
+          <br />
+          <div class="opciones_administrador">
+            <button type="button" class="boton" id="boton_eliminar">
+              Eliminar Solicitudes
+            </button>
+            <button type="button" class="boton" id="boton_otras">
+              Cargar 3 datos
+            </button>
+          </div>
+          <br />
+        </div>
+      </div>
+      <div class="pregunta" id="abresino">
+        <p><img src= Imagenes/amarilla.png class=imagenadvertencia/></p>
+        <p id="cierrasino"></p>
+        <button type="button" class="preg" id="si">SI</button>
+        <button type="button" class="preg" id="no">NO</button>
+      </div>
+      <dialog id="modal1" class="fondo_transparente">
+        <div class="ventanamodal"></div>
+      </dialog>
+    </main>
+    <footer>
+      <div class="pie">
+        <p>
+          UNICEN-TUDAI-Web 1-Trabajo práctico especial - Martín González,
+          Nicolás - Rojo, Gabriela
+        </p>
+        <img src="Imagenes/boton-wsp.png" width="10%" />
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="generarcaptchaa.js"></script>
+    <script type="text/javascript" src="mainadmin.js"></script>
+  </body>
+</html>
